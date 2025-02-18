@@ -18,3 +18,10 @@ function resetSave() {
 
     alert("Game progress has been reset!");
 }
+// Define a cheat code function
+   function MinusScore() {
+    score += 10000; // Add 1000 to the score
+    scoreDisplay.textContent = score; // Update the score display
+    updateShopButtons(); // Update the shop buttons based on new score
+    console.log("Cheat activated! 1000 score added."); // Confirmation in the console
+}
