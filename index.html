@@ -190,7 +190,7 @@ document.getElementById('clickButton').addEventListener('click', () => {
 document.getElementById('upgradeScore').addEventListener('click', () => {
     if (score >= scoreUpgradeCost) {
         score -= scoreUpgradeCost;
-        cursorScore += 0.1;
+        cursorScore += 0.5;
         scoreUpgradeCost *= 2;
         
         score = parseFloat(score.toFixed(1)); // Fix floating point precision
@@ -226,7 +226,7 @@ document.getElementById('upgradeScore').addEventListener('click', () => {
     document.getElementById('upgradeScore').addEventListener('click', () => {
         if (score >= scoreUpgradeCost) {
             score -= scoreUpgradeCost;
-            cursorScore += 0.1;
+            cursorScore += 0.5;
             scoreUpgradeCost *= 2;
 
             localStorage.setItem('cursorScore', cursorScore);
